@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Container } from './styles';
 
 import Input from '../../components/Input';
@@ -6,19 +6,19 @@ import Select from '../../components/Select';
 import Button from '../../components/Button';
 import CardList from '../../components/CardList';
 
-const [produto] = useState([]);
-setProduto((prevState) => [
-  ...prevState,
-  {
-    id: Math.random(),
-    title: 'Camisa 1',
-    description: 'descrição da camisa',
-    size: 'M',
-    color: 'Preto',
-    quantity: 1,
-    price: 12,
-  },
-]);
+// const [produto] = useState([]);
+// setProduto((prevState) => [
+//   ...prevState,
+//   {
+//     id: Math.random(),
+//     title: 'Camisa 1',
+//     description: 'descrição da camisa',
+//     size: 'M',
+//     color: 'Preto',
+//     quantity: 1,
+//     price: 12,
+//   },
+// ]);
 
 export default function Cart() {
   return (
@@ -62,7 +62,7 @@ export default function Cart() {
       <div className="itemsContainer">
         <div className="items">
 
-          {produto.map((post) => (
+          {/* {produto.map((post) => (
             <CardList
               id={post.id}
               title={post.title}
@@ -73,7 +73,7 @@ export default function Cart() {
               price={post.price}
             />
 
-          ))}
+          ))} */}
 
           <CardList title="Camisa 1" description="descrição da camisa" size="M" color="Preto" quantity={1} price={12} />
 

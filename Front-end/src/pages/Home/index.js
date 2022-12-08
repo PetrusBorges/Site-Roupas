@@ -1,7 +1,14 @@
+import { Container } from './syles';
+import AutoPlay from '../../components/Slider';
+
+
 export default function Home() {
+
   return (
-    <div>
-      Home
-    </div>
+    
+      <Container>
+        <AutoPlay/>
+      </Container>
+    
   );
 }

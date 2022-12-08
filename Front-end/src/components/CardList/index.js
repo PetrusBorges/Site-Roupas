@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import card from '../../assets/images/card.png';
 import { Container } from './styles';
 import Button from '../Button';
+import { useContext } from 'react';
+import { CartContext } from '../../contexts/CartContext';
 
 export default function CardList({
   title, description, size, color, quantity, price,
 }) {
+  const { removeFromCart } = useContext(CartContext);
   return (
     <Container>
       <div className="cardFoto">
@@ -34,7 +37,7 @@ export default function CardList({
             Quantidade:
             &nbsp;
             <strong>
-              <Button className="add">
+              <Button onClick={() => removeFromCart } className="add">
                 <p>-</p>
               </Button>
 
