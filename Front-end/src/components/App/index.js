@@ -15,17 +15,16 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-      <ThemeProvider theme={defaultTheme}>
-        <GlobalStyles />
-        <Container>
-          <Header />
-          <ReactRoutes />
-          <Footer />
-        </Container>
-      </ThemeProvider>
+        <ThemeProvider theme={defaultTheme}>
+          <GlobalStyles />
+          <Container>
+            <Header />
+            <ReactRoutes />
+            <Footer />
+          </Container>
+        </ThemeProvider>
 
       </CartProvider>
-
 
     </BrowserRouter>
   );

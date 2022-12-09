@@ -1,26 +1,33 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 90%;
-  max-height: 475px;
-  margin-top: 80px;
-  margin: 80px  auto 0;
-  overflow: hidden;
+  margin: 0 auto 0;
+  
+`;
 
-  .inner {
-    display: flex;
-    cursor: grab;
+export const ContainerPromo = styled.div`
+  display: flex;
+  height: 500px;
+  margin: 50px auto 50px;
+  .promoBaner {
+    width: 600px;
+    height: 500px;
+    border-radius: 16px;
+    
   }
-  .item {
-    max-width: 100%;
-    height: 100%;
-    img {
-      border-radius: 4px;
-    }
-    .carrousel {
-      overflow: hidden;
-    }
+`;
+
+export const ContainerPromoStripe = styled.div`
+  width: 100%;
+  height: 200px;
+  margin: 50px auto 50px;
+  .promoBaner {
+    height: 200px;
+    width: 100%;
   }
 
 `;

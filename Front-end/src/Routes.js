@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Shirts from './pages/Shirts';
 import Painting from './pages/Painting';
 import LogIn from './pages/LogIn';
+import ProductShow from './components/ProductShow';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
 
@@ -13,6 +14,7 @@ export default function ReactRoutes() {
       <Route path="/" exact element={<Home />} />
       <Route path="/shirts" element={<Shirts />} />
       <Route path="/painting" element={<Painting />} />
+      <Route path="/product/:id" element={<ProductShow />} />
       <Route path="/login/" element={<LogIn />} />
       <Route path="/register" element={<Register />} />
       <Route path="/cart" element={<Cart />} />

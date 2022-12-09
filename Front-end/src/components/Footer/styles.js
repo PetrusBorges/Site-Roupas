@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width:100% ;
   height: 200px;
-  margin-top: 150px;
+  margin-top: 250px;
   background: ${({ theme }) => theme.colors.gray[900]};
   color: #fff;
   display: flex;

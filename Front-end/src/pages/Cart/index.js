@@ -4,21 +4,7 @@ import { Container } from './styles';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import Button from '../../components/Button';
-import CardList from '../../components/CardList';
-
-// const [produto] = useState([]);
-// setProduto((prevState) => [
-//   ...prevState,
-//   {
-//     id: Math.random(),
-//     title: 'Camisa 1',
-//     description: 'descrição da camisa',
-//     size: 'M',
-//     color: 'Preto',
-//     quantity: 1,
-//     price: 12,
-//   },
-// ]);
+import Products from '../../components/ProductList';
 
 export default function Cart() {
   return (
@@ -50,7 +36,7 @@ export default function Cart() {
           </Select>
 
           <h3>Comentários sobre o pedido</h3>
-          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          <textarea name="comments" id="comments" cols="30" rows="10" />
 
           <Button>Finalizar compra</Button>
 
@@ -61,26 +47,7 @@ export default function Cart() {
 
       <div className="itemsContainer">
         <div className="items">
-
-          {/* {produto.map((post) => (
-            <CardList
-              id={post.id}
-              title={post.title}
-              description={post.description}
-              size={post.size}
-              color={post.color}
-              quantity={post.quantity}
-              price={post.price}
-            />
-
-          ))} */}
-
-          <CardList title="Camisa 1" description="descrição da camisa" size="M" color="Preto" quantity={1} price={12} />
-
-          <div className="total">
-            <p>Resumo: &nbsp;&nbsp;&nbsp; R$</p>
-          </div>
-
+          <Products />
         </div>
       </div>
     </Container>
